@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Homepage of Siyuan Sheng</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage of Siyuan Sheng</title>
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+    <style></style>
+    <script src="assets/dist/js/jquery-3.6.3.js"></script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#navbar").load("navbar.html");
+        });
+    </script>
 </head>
-<body style="margin: 0px; height:850px; width:auto">
-<iframe src="frame.html" style="height:100%;width:100%;border-width:0px;">
-</iframe>
-
+<body>
+    <div class="container text-center">
+        <div class="row" id="navbar"></div>
+        <div class="row" style="height:50px"></div>
+        <div class="row">
+            <div class="row align-items-center">
+                <div class="col-lg-2 offset-lg-2">
+                    <img src="images/photo.jpeg" class="img-fluid" alt="Portrait Photo">
+                </div>
+                <div class="col-lg-8">
+                    <p class="h4">SHENG, Siyuan</p>
+                    <p class="h6">
+                        <br>
+                        Institution: The Chinese University of Hong Kong (PhD) <br>
+                        <br>
+                        <img src ="images/gmail-logo.png" width ="15" height = "15"> siyuanshengpro@gmail.com <br>
+                        <br>
+                        <img src ="images/location-icon.png" width ="15" height = "15"> Hong Kong, China <br>
+                        <br>
+                        <img src = "images/github-logo.png", width = "15" height = "15"> <a href="https://github.com/LGN520" style= "color:black; text-decoration:none;">Github Homepage</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <p><br><hr><br></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p style="font-size: large">
+                        <b>Biography: </b> 
+                        I am now a second-year postgraduate student of the Chinese University of Hong Kong. <br>
+                        Before pursuing my Ph.D. degree, I got my B.A. in Shanghai Jiao Tong University in 2018 and got my M.A in University of Chinese Academy and Science in 2021.
+                        My current advisor is Patrick P. C. Lee, and I am focusing on network measurement and storage.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
