@@ -1,0 +1,79 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>
+	FarReach: Write-back Caching in Programmable Switches
+</title>
+<style type="text/css">
+	@charset "utf-8";
+	body {
+		background-color: #F0FFF0;
+	}
+
+	body, td, th {
+		color: #000;
+	}
+
+	h1, h2 {
+		font-family: Times New Roman, Times, serif;
+		color: #663300;
+	}
+
+	h3, h4, h5, h6 {
+		color: #996633;
+	}
+
+	a {
+		color: #348017;
+	}
+</style><style type="text/css"></style></head>
+
+<body>
+
+<h1 align="center" class="h1style">
+	FarReach: Write-back Caching in Programmable Switches
+</h1>
+
+<h2>Introduction</h2>
+<p>
+Skewed write-intensive key-value storage workloads are increasingly
+observed in modern data centers, yet they also
+incur server overloads due to load imbalance. Programmable
+switches provide viable solutions for realizing load-balanced
+caching on the I/O path, and hence implementing write-back
+caching in programmable switches is a natural direction to
+absorb frequent writes for high write performance. However,
+enabling in-switch write-back caching is non-trivial, as it
+not only is challenged by the strict programming rules and
+limited stateful memory of programmable switches, but also
+necessitates reliable protection against data loss due to switch
+failures. We propose FarReach, a new caching framework
+that supports fast, available, and reliable in-switch write-back
+caching. FarReach carefully co-designs both the control and
+data planes for cache management in programmable switches,
+so as to achieve high data-plane performance with lightweight
+control-plane management. Experiments on a Tofino switch
+testbed show that FarReach achieves a throughput gain of up
+to 6.6X over a state-of-the-art in-switch caching approach
+under skewed write-intensive workloads.
+</p>
+
+
+<h2>Publication</h2>
+<ul>
+<li>
+Siyuan Sheng, Huancheng Puyang, Qun Huang, Lu Tang, and Patrick P. C. Lee<br>
+<b>"FarReach: Write-back Caching in Programmable Switches"</b><br>
+ATC 2023.<br>
+[pdf]
+[<a href="https://github.com/LGN520/farreach-public">software</a>]
+</li>
+</ul>
+
+<h2>License</h2>
+The source code of FarReach is released under the GNU/GPL license. 
+
+
+
+
+
+</body></html>

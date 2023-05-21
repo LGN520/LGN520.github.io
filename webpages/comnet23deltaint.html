@@ -1,0 +1,66 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>
+	A General Delta-based In-band Network Telemetry Framework with Extremely Low Bandwidth Overhead
+</title>
+<style type="text/css">
+	@charset "utf-8";
+	body {
+		background-color: #F0FFF0;
+	}
+
+	body, td, th {
+		color: #000;
+	}
+
+	h1, h2 {
+		font-family: Times New Roman, Times, serif;
+		color: #663300;
+	}
+
+	h3, h4, h5, h6 {
+		color: #996633;
+	}
+
+	a {
+		color: #348017;
+	}
+</style><style type="text/css"></style></head>
+
+<body>
+
+<h1 align="center" class="h1style">
+	A General Delta-based In-band Network Telemetry Framework with Extremely Low Bandwidth Overhead
+</h1>
+
+<h2>Introduction</h2>
+<p>
+In-band network telemetry (INT) enriches network management at scale through the embedding of complete deviceinternal states into each packet along its forwarding path, yet such embedding of INT information also incurs significant bandwidth overhead in the data plane.
+We propose DeltaINT, a general INT framework that achieves extremely low bandwidth overhead and supports various packet-level and flow-level applications in network management.
+DeltaINT builds on the insight that state changes are often negligible at most time, so it embeds the complete state information into a packet only when the state change is deemed significant.
+We propose two variants for DeltaINT that trade between bandwidth usage and measurement accuracy, while both variants achieve significantly lower bandwidth overhead than the original INT framework.
+We theoretically derive the time/space complexities and the guarantees of bandwidth mitigation for DeltaINT.
+We implement DeltaINT in both software and P4.
+Our evaluation shows that DeltaINT significantly mitigates the bandwidth overhead, and the deployment in a Tofino switch incurs limited hardware resource usage.
+</p>
+
+
+<h2>Publication</h2>
+<ul>
+<li>
+Siyuan Sheng, Qun Huang, and Patrick P. C. Lee<br>
+<b>"A General Delta-based In-band Network Telemetry Framework with Extremely Low Bandwidth Overhead"</b><br>
+COMNET 2023.<br>
+[<a href="../papers/comnet23deltaint.pdf">pdf</a>]
+[<a href="https://github.com/LGN520/deltaint">software</a>]
+</li>
+</ul>
+
+<h2>License</h2>
+The source code of DeltaINT is released under the GNU/GPL license. 
+
+
+
+
+
+</body></html>
