@@ -1,0 +1,13 @@
+Version 1.2.0
+    - Open-source P4 hardware implementation deployed in Tofino switch
+
+Version 1.1.0
+    - Introduce two variants for DeltaINT: (i) DeltaINT-O (the one proposed in
+      the ICNP'21 paper) and (ii) DeltaINT-E (which uses delta encoding to
+      embed the delta that is within a threshold into a packet).
+    - Add DeltaINT-E in gray failure detection, congestion control, and
+      latency measurement
+    - Add fine-grained monitoring for both DeltaINT-O and DeltaINT-E
+
+Version 1.0.0
+    - First version of the code.
